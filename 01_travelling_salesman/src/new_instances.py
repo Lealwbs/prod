@@ -4,7 +4,9 @@ import numpy as np
 
 seed(0)
 
-ni,nj = 33,1
+# ni,nj = 33,1 # Instância 1
+# ni,nj = 20,1 # Instância 2
+ni,nj = 12, 1 # Instância 3
 I,J = range(ni),range(nj)
 
 coordxi = sample(range(1,50),ni)

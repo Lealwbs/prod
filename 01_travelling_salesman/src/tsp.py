@@ -5,7 +5,9 @@ from math import sqrt
 import numpy as np
 
 # numero de clientes,no de identificacao da planta
-n = 21
+# n = 34 # Instância 1
+# n = 21 # Instância 2
+n = 13 # Instância 3
 planta = 0
 
 # listas com os indices dos clientes e dos arcos
@@ -13,8 +15,18 @@ N = range(n)
 A = [(i,j) for (i,j) in product(N,N) if i != j]
 
 # posicao geografica dos nos
-posx = np.array([40, 25, 27, 3, 17, 33, 32, 26, 20, 31, 23, 38, 14, 45, 9, 19, 36, 7, 46, 30, 18])
-posy = np.array([5, 46, 39, 10, 20, 7, 5, 22, 31, 36, 45, 23, 28, 21, 14, 42, 29, 17, 4, 26, 30])
+
+# Instância 1
+# posx = np.array([37, 25, 27, 3, 17, 33, 32, 26, 20, 31, 23, 38, 14, 45, 9, 19, 36, 7, 46, 30, 18, 40, 43, 42, 5, 10, 4, 47, 22, 11, 16, 41, 24, 12])
+# posy = np.array([36, 28, 21, 40, 41, 14, 36, 31, 29, 34, 17, 4, 44, 1, 6, 26, 37, 32, 22, 8, 24, 11, 23, 3, 7, 19, 43, 30, 5, 18, 15, 27, 25, 42])
+
+# Instância 2
+# posx = np.array([40, 25, 27, 3, 17, 33, 32, 26, 20, 31, 23, 38, 14, 45, 9, 19, 36, 7, 46, 30, 18])
+# posy = np.array([5, 46, 39, 10, 20, 7, 5, 22, 31, 36, 45, 23, 28, 21, 14, 42, 29, 17, 4, 26, 30])
+
+# Instância 3
+posx = np.array([9, 25, 27, 3, 17, 33, 32, 26, 20, 31, 23, 38, 14])
+posy = np.array([26, 33, 9, 19, 48, 7, 40, 17, 35, 39, 10, 20, 45])
 
 # distancia Euclidiana entre os nos
 c = [ [ sqrt( (posx[i] - posx[j])**2 + (posy[i] - posy[j])**2 ) for j in N ] for i in N]

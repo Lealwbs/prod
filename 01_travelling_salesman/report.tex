@@ -1,0 +1,116 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[brazil,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{1cm}{2cm}
+\usepackage{setspace}
+\setstretch{1}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{footnote}
+\usepackage{threeparttable}
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{cases}
+\usepackage{mathpazo}
+\usepackage{tikz}
+\usepackage{indentfirst}
+\usepackage{pgfplots}
+\RequirePackage{lineno}
+\usepackage{apacite}
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
+
+\ifpdf
+    \usepackage{epstopdf}
+\fi
+
+\let\newfloat=\undefined
+\usepackage[ruled]{algorithm}
+\usepackage{algorithmic}
+
+\usepackage[
+    a4paper,
+    portuguese,
+    bookmarks=true,
+    bookmarksnumbered=true,
+    linktocpage,
+    colorlinks,
+    citecolor=blue,
+    plainpages=false,
+    pdfpagelabels]{hyperref}
+
+% Definições
+\newtheorem{definition}{Definição}
+\newtheorem{problem}{Problema}
+\newtheorem{proposition}{Proposição}
+
+% Variáveis matemáticas
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\CD}{\mathcal{C_D}}
+\newcommand{\Cl}{\mathcal{C}^{'}}
+\newcommand{\ClD}{\mathcal{C}^{'}_D}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Dl}{\mathcal{D}^{'}}
+\newcommand{\DlF}{\mathcal{D}^{'}_F}
+\newcommand{\Dlc}{\mathcal{D}^{'}_c}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\Fl}{\mathcal{F}^{'}}
+\newcommand{\Flc}{\mathcal{F}^{'}_c}
+\newcommand{\Fli}{\mathcal{F}^{'}_i}
+\newcommand{\Flt}{\mathcal{F}^{'}_t}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\Il}{\mathcal{I}^{'}}
+\newcommand{\IlF}{\mathcal{I}^{'}_F}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\Or}{\mathcal{O}}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\Inteiro}{\mathbb Z}
+
+\pagestyle{empty}
+
+\title{Titulo}
+\author{\textbf{Autor 1 - Nome}\\\textbf{Autor 2 - Nome}}
+\date{\empty}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\selectlanguage{brazil}
+
+% =========================================
+\section{Problema}
+% =========================================
+
+Fazer uma breve explicação do problema.
+
+% =========================================
+\section{Discussão dos resultados}
+% =========================================
+
+Colocar o tamanho das instâncias e as instâncias utilizadas.
+
+Discutir os resultados obtidos.
+
+\subsection{Instância 01}
+
+1) Tamanho da instância
+
+2) Instância
+
+3) Resultados
+
+\newpage
+\bibliographystyle{apacite}
+\label{bibliografia}
+\bibliography{bibli}
+
+\end{document}
