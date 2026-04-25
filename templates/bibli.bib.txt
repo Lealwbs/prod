@@ -1,0 +1,164 @@
+@article{souza,
+    author = "{Souza,M.~C.} and {Carvalho, C.~R.V} and {Brizon, B.~B.}  ",
+    address = "",
+    title = "{\em Modelos matemáticos para alocação de peças a embalagens no abastecimento de linhas de montagem}",
+    journal = "XXXVI Simposio brasileiro de Pesquisa Operacional",
+    volume = "",
+    number = "",
+    pages = "962-969",
+    publisher = "",
+    year = "2004"
+    }
+   
+ 
+   
+@article{kraje,
+    author = "{Krajewski,L.~J.} and {Ritzman, L.~P}",
+    address = "",
+    title = "{\em  Operations Management}",
+    journal = "Addison Wesley",
+    volume = "",
+    number = "",
+    pages = "",
+    publisher = "",
+    year = "1993"
+    }
+        
+        
+@article{wagner,
+    author = "{Wagner,H.~M.} and {Whitin, T.~M.}",
+    address = "",
+    title = "{\em A dynamic version of the economic lot size model}",
+    journal = "Management Science",
+    volume = "5",
+    number = "",
+    pages = "89-96",
+    publisher = "",
+    year = "1958"
+    }
+    
+@article{pimentel,
+    author = "{Pimentel,C.~M.} and {Alvelos, F.~P.} and {Carvalho, J.~M.}",
+    address = "",
+    title = "{Comparing Dantzig–Wolfe decompositions and branch-and-price algorithms for the multi-item capacitated lot sizing problem}",
+    volume = "25",
+    number = "2",
+    pages = "299-319",
+    publisher = "Optimization Methods & Software",
+    year = "2010"
+    }    
+    
+
+@article{ende1,
+    author = "{Emde, S.} and {Boysen, S.}",
+    address = "",
+    title = "{Optimally locating in house logistics areas to facilitate JIT-supply of mixed-model assembly lines}",
+    journal = "International Journal of Production Economics",
+    volume = "3539",
+    number = "",
+    pages = "393-402",
+    publisher = "",
+    year = "2012"
+}
+    
+@book{slack,
+  author =       "{Slack, N.} and {Chambers, S} and {Johnston R.}",
+  title =        "{Administração da produção}",
+  publisher =    "Editora: Atlas",
+  year =         "2002",
+  isbn =         ""
+}    
+
+    
+@book{martin2,
+  author =       "{Martin, R. K.}",
+  title =        "{Large scale linear and integer optimization}",
+  publisher =    "Editora: Atlas",
+  year =         "1999",
+  isbn =         ""
+}    
+    
+@book{wanke,
+  author =       "{Wanke, P.}",
+  title =        "{Gestão de estoques na cadeia de suprimentos: Decisões e Modelos Quantitativo}",
+  publisher =    "Chicago",
+  year =         "1999",
+  isbn =         ""
+}    
+
+@book{ballou,
+  author =       "{Ballou, R.H.}",
+  title =        "{Gerenciamento da Cadeia de Suprimentos/Logística Empresarial}",
+  publisher =    "5.ed. Editora: Bookman - Porto Alegre ",
+  year =         "2006",
+  isbn =         ""
+}   
+
+    
+@article{bitran,
+    author = "{Bitran, G.R.} and {Chang, L.}",
+    address = "",
+    title = "{A mathematical programming approach to a deterministic Kanban system.}",
+    journal = "Management Science",
+    volume = "33",
+    number = "",
+    pages = "427-441",
+    publisher = "",
+    year = "1987"
+    }  
+    
+@article{vander,
+    author = "{Vanderbeck, F.}",
+    address = "",
+    title = "{On Dantizig-Wolfe decomposition in integer programming and ways to perform branching in a Branch-and-Price algorithm.}",
+    journal = "Operations Research",
+    volume = "48",
+    number = "",
+    pages = "111-128",
+    publisher = "",
+    year = "2000"
+    }      
+    
+    
+@article{agha,
+    author = "{Aghajani, M.} and {Keramati, A.} and {Javadi, B.}",
+    address = "",
+    title = "{Determination of number of kanban in a cellular manufacturing system with considering rework process}",
+    journal = "International Journal of Advanced Manufacturing Technology",
+    volume = "",
+    number = "",
+    pages = "1-13",
+    publisher = "",
+    year = "2012"
+}
+
+    
+@article{faccio,
+    author = "{Faccio, M.} and {Gamberi, M.} and {Persona, A.}",
+    address = "",
+    title = "{Kanban number optimisation in a supermarket
+warehouse feeding a mixed-model assembly system}",
+    journal = "International Journal of Production Research",
+    volume = "51",
+    number = "10",
+    pages = "2997-3017",
+    publisher = "",
+    year = "2013"
+}
+
+@article{vander2,
+    author = "{Vanderbeck, F.} and {Savelsbergh, M. W.}",
+    address = "",
+    title = "{A generic view of Dantzig–Wolfe decomposition in mixed integer programming}",
+    journal = "Operations Research Letters",
+    volume = "34",
+    number = "",
+    pages = "296-306",
+    publisher = "",
+    year = "2006"
+    }   
+
+
+    
+     
+
