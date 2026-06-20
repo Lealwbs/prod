@@ -1,0 +1,6 @@
+mip>=1.17.6
+scipy
+pandas
+openpyxl
+matplotlib
+pypdf

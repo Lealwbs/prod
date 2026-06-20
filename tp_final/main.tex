@@ -100,10 +100,323 @@
 \maketitle
 \thispagestyle{empty}
 \selectlanguage{brazil}
+% =========================================
+\section{Cenário 1 - Cenário Base}
+% =========================================
+
+\subsection{Base Custos Totais e Componentes}
+
+O modelo encontrou uma solução ótima para o cenário base com um custo total de R\$ 20.501,43[cite: 3]. A distribuição dos custos indica que a maior parcela dos gastos está concentrada no processamento do café, seguido pelos custos fixos de instalação[cite: 4].
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lc}
+\hline
+\textbf{Componente de Custo} & \textbf{Valor (R\$)} \\ \hline
+Processamento (Torrefadoras) & 13.110,56 \\
+Instalação de CDs & 6.000,00 \\
+Transporte CD $\rightarrow$ Cliente & 736,30 \\
+Transporte Fornecedor $\rightarrow$ CD & 654,57 \\
+Penalidade de Estoque & 0,00 \\ \hline
+\textbf{Custo Total} & \textbf{20.501,43} \\ \hline
+\end{tabular}
+\caption{Componentes de custo no Cenário Base [cite: 5]}
+\label{tab:cenario1_custos}
+\end{table}
+
+\subsection{Cidades Selecionadas e Torrefadoras}
+
+A otimização determinou a abertura de dois Centros de Distribuição[cite: 7]:
+\begin{itemize}
+    \item \textbf{CD Araxá}: Instalado e operando com a torrefadora T2[cite: 8].
+    \item \textbf{CD Belo Horizonte}: Instalado e operando com a torrefadora T1[cite: 9].
+\end{itemize}
+
+\subsection{Distribuição de Fluxo (Captação de Fornecedores)}
+
+A Tabela \ref{tab:cenario1_forn_cd} apresenta a alocação dos fluxos de entrada (inbound) originados nos fornecedores com destino aos CDs abertos.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcc}
+\hline
+\textbf{Origem (Fornecedor)} & \textbf{Destino (CD)} & \textbf{Volume (kg)} \\ \hline
+Ituiutaba & Araxá & 159,00 \\
+Uberaba & Araxá & 170,00 \\
+Patos de Minas & Araxá & 127,00 \\
+Araxá & Araxá & 148,00 \\
+São João del-Rei & Belo Horizonte & 251,00 \\
+Governador Valadares & Belo Horizonte & 313,00 \\
+Patos de Minas & Belo Horizonte & 5,00 \\
+Barbacena & Belo Horizonte & 173,00 \\
+Lavras & Belo Horizonte & 157,00 \\
+Manhuaçu & Belo Horizonte & 271,00 \\
+Divinópolis & Belo Horizonte & 288,00 \\ \hline
+\end{tabular}
+\caption{Distribuição de fluxo dos Fornecedores para os CDs [cite: 11, 13]}
+\label{tab:cenario1_forn_cd}
+\end{table}
+
+\subsection{Distribuição de Fluxo (Entrega aos Clientes)}
+
+As tabelas \ref{tab:cenario1_cd_cli_araxa} e \ref{tab:cenario1_cd_cli_bh} detalham a etapa de escoamento (outbound) dos produtos processados nos centros de distribuição até os clientes finais.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcc}
+\hline
+\textbf{Origem (CD)} & \textbf{Destino (Cliente)} & \textbf{Volume (kg)} \\ \hline
+Araxá & Ituiutaba & 64,00 \\
+Araxá & Uberaba & 121,00 \\
+Araxá & Patos de Minas & 110,00 \\
+Araxá & Araxá & 124,00 \\
+Araxá & Alfenas & 61,00 \\
+Araxá & Uberlândia & 73,00 \\
+Araxá & Poços de Caldas & 51,00 \\ \hline
+\end{tabular}
+\caption{Distribuição de fluxo do CD Araxá para os Clientes [cite: 15]}
+\label{tab:cenario1_cd_cli_araxa}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcc}
+\hline
+\textbf{Origem (CD)} & \textbf{Destino (Cliente)} & \textbf{Volume (kg)} \\ \hline
+Belo Horizonte & São João del-Rei & 101,00 \\
+Belo Horizonte & Governador Valadares & 142,00 \\
+Belo Horizonte & Barbacena & 70,00 \\
+Belo Horizonte & Lavras & 132,00 \\
+Belo Horizonte & Manhuaçu & 136,00 \\
+Belo Horizonte & Divinópolis & 124,00 \\
+Belo Horizonte & Alfenas & 76,00 \\
+Belo Horizonte & Varginha & 149,00 \\
+Belo Horizonte & Ipatinga & 52,00 \\
+Belo Horizonte & Juiz de Fora & 71,00 \\
+Belo Horizonte & Sete Lagoas & 102,00 \\
+Belo Horizonte & Teófilo Otoni & 137,00 \\
+Belo Horizonte & Belo Horizonte & 79,00 \\
+Belo Horizonte & Montes Claros & 87,00 \\ \hline
+\end{tabular}
+\caption{Distribuição de fluxo do CD Belo Horizonte para os Clientes [cite: 15, 16, 17]}
+\label{tab:cenario1_cd_cli_bh}
+\end{table}
+
+\subsection{Mapa de Rotas Geradas}
+
+A representação visual na Figura \ref{fig:mapa_cenario_base} ilustra as rotas de transporte entre fornecedores, os dois CDs instalados e os clientes finais, evidenciando a regionalização da operação logística descrita a seguir[cite: 42].
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{imgs/mapa_cenario_base.png}
+\caption{Rotas logísticas geradas no cenário base [cite: 18]}
+\label{fig:mapa_cenario_base}
+\end{figure}
+
+\subsection{Análise Crítica do Cenário Base}
+
+A configuração gerada atende integralmente à demanda sem gerar estoques não distribuídos (custo de penalidade igual a zero)[cite: 44]. Dos 3 CDs permitidos pela restrição do modelo, o sistema optou por instalar apenas 2 (Araxá e Belo Horizonte)[cite: 45]. Isso demonstra que a capacidade conjunta das torrefadoras T1 e T2 nestes locais é suficiente para processar toda a oferta disponível e atender a demanda exigida, evitando o custo fixo de instalação de um terceiro centro de distribuição[cite: 46].
+
+Os custos de processamento representam a maior proporção do custo total da rede (R\$ 13.110,56), configurando o fator mais crítico da função objetivo[cite: 47]. Os custos logísticos de transporte, tanto na captação quanto na distribuição, mantiveram-se otimizados e com impacto financeiro reduzido (R\$ 1.390,87 somados)[cite: 48, 49].
+
+Observa-se, conforme ilustrado no mapa de rotas, uma nítida regionalização na topologia da rede[cite: 50]. O CD Araxá concentra as operações de captação e distribuição do Triângulo Mineiro e Alto Paranaíba (Ituiutaba, Uberaba, Patos de Minas, Uberlândia)[cite: 51, 52]. Por outro lado, o CD Belo Horizonte opera como o polo logístico central do estado, recebendo a carga das demais regiões produtoras e garantindo o abastecimento do Sul de Minas, Zona da Mata, Vale do Rio Doces, região Central e Norte de Minas[cite: 52].
+
+Do ponto de vista operacional, ocorre o fracionamento pontual de cargas para otimização exata[cite: 53]. A cidade de Alfenas tem sua demanda atendida por ambos os CDs (61 kg oriundos de Araxá e 76 kg de Belo Horizonte)[cite: 54]. A captação em Patos de Minas também é dividida: a maior parte (127 kg) segue para Araxá, enquanto um pequeno resíduo (5 kg) é transportado para Belo Horizonte[cite: 55]. Esse comportamento reflete a precisão matemática do modelo em equalizar as capacidades das torrefadoras e minimizar as distâncias rodoviárias de forma global[cite: 56].
+
+\newpage
+% =========================================
+\section{Cenário 2 - Aumento da Oferta}
+% =========================================
+
+O Cenário 2 avalia a resposta da malha logística a um aumento de 50\% na capacidade de oferta de todos os fornecedores, mantendo a demanda dos clientes constante e idêntica ao cenário base (2062,00 kg no total). Como consequência do aumento, a oferta total disponível na rede salta de 2062,00 kg para 3093,00 kg.
+
+A imposição de processamento total da oferta (Equação 3) em conjunto com a igualdade estrita no atendimento da demanda (Equação 5) cria um desbalanceamento operacional: todo o café ofertado deve ser obrigatoriamente coletado e processado, restando um volume excedente de 1031,00 kg que não pode ser entregue aos clientes e deve ser retido nos Centros de Distribuição.
+
+A Tabela \ref{tab:cenario2_custos} apresenta os custos da operação sob este cenário. Nota-se um crescimento dramático no custo total da cadeia, impulsionado pela penalidade por estocagem que representa mais de 78\% do gasto total.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\hline
+\textbf{Componente de Custo} & \textbf{Valor (R\$)} & \textbf{Representatividade (\%)} \\ \hline
+Custo Total             & 131135,96  & 100\%     \\
+Penalidade de Estoque   & 103100,00  & $\sim$78,6\%  \\
+Processamento (Torr)    &  20846,82  & $\sim$15,9\%  \\
+Instalação de CDs       &   6000,00  & $\sim$4,6\%  \\
+Transporte Forn->CD     &    700,71  & $\sim$0,5\%  \\
+Transporte CD->Cli      &    488,43  & $\sim$0,4\%    \\
+\hline
+\end{tabular}
+\caption{Resultados Financeiros do Cenário 2}
+\label{tab:cenario2_custos}
+\end{table}
+
+\subsection{Configuração da Rede e Bottlenecks de Capacidade}
+
+Diferente do cenário base, a rede agora opera com a abertura de um único Centro de Distribuição em Divinópolis ($w_{Divinopolis} = 2,0$), o qual foi expandido para dois módulos a fim de comportar a alocação de duas torrefadoras: T2 e T3 ($z_{Divinopolis, T2} = 1$ e $z_{Divinopolis, T3} = 1$). A Tabela \ref{tab:cenario2_cds} demonstra o balanço de fluxos no polo de Divinópolis.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llrrr}
+\hline
+\textbf{CD aberto} & \textbf{Torrefadora} & \textbf{Entrada (kg)} & \textbf{Saída (kg)} & \textbf{Estoque (kg)} \\ \hline
+Divinópolis & T2 e T3 & 3093,00 & 2062,00 & 1031,00 \\ \hline
+\end{tabular}
+\caption{CDs abertos, torrefadoras e balanço de fluxo no Cenário 2}
+\label{tab:cenario2_cds}
+\end{table}
+
+A escolha das torrefadoras T2 e T3 é um comportamento puramente ditado pelas restrições de capacidade do modelo. Com o aumento da oferta total para 3093,00 kg, e devido à restrição de limite máximo de 2 CDs ativos ($m \le 2$), a empresa pode alocar no máximo duas torrefadoras (uma para cada módulo de CD ou divididas). A soma das capacidades de quaisquer duas torrefadoras deve suportar os 3093,00 kg de entrada:
+\begin{itemize}
+    \item $q_{T1} + q_{T2} = 1458 + 1580 = 3038 \text{ kg} < 3093 \text{ kg}$ (Inviável)
+    \item $q_{T1} + q_{T3} = 1458 + 1587 = 3045 \text{ kg} < 3093 \text{ kg}$ (Inviável)
+    \item $q_{T2} + q_{T3} = 1580 + 1587 = 3167 \text{ kg} \ge 3093 \text{ kg}$ (Viável)
+\end{itemize}
+
+Assim, o solver é matematicamente forçado a escolher T2 e T3, as duas maiores torrefadoras, descartando a torrefadora T1 que, apesar de ser a mais barata (6,20 R\$/kg) e mais rápida, gera um gargalo físico insuperável neste cenário de oferta elevada. O processamento por T2 e T3 encarece o custo de processamento total (R\$ 20.846,82).
+
+A Tabela \ref{tab:cenario2_forn_cd} e a Tabela \ref{tab:cenario2_cd_cli} detalham os fluxos de abastecimento e distribuição da malha, respectivamente. Para a estimativa de viagens, considerou-se caminhões de capacidade padrão (500 kg), com arredondamento para cima.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llcc}
+\hline
+\textbf{Origem (Fornecedor)} & \textbf{Destino (CD)} & \textbf{Quantidade (kg)} & \textbf{Viagens} \\ \hline
+São João del-Rei & Divinópolis & 376,50 & 1 \\
+Governador Valadares & Divinópolis & 469,50 & 1 \\
+Ituiutaba & Divinópolis & 238,50 & 1 \\
+Uberaba & Divinópolis & 255,00 & 1 \\
+Patos de Minas & Divinópolis & 198,00 & 1 \\
+Barbacena & Divinópolis & 259,50 & 1 \\
+Lavras & Divinópolis & 235,50 & 1 \\
+Manhuaçu & Divinópolis & 406,50 & 1 \\
+Divinópolis & Divinópolis & 432,00 & 1 \\
+Araxá & Divinópolis & 222,00 & 1 \\ \hline
+\textbf{Total} & & \textbf{3093,00} & \textbf{10} \\
+\hline
+\end{tabular}
+\caption{Distribuição dos fornecedores para os CDs no Cenário 2}
+\label{tab:cenario2_forn_cd}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llcc}
+\hline
+\textbf{Origem (CD)} & \textbf{Destino (Cliente)} & \textbf{Quantidade (kg)} & \textbf{Viagens} \\ \hline
+CD Divinópolis & São João del-Rei & 101,00 & 1 \\
+CD Divinópolis & Governador Valadares & 142,00 & 1 \\
+CD Divinópolis & Ituiutaba & 64,00 & 1 \\
+CD Divinópolis & Uberaba & 121,00 & 1 \\
+CD Divinópolis & Patos de Minas & 110,00 & 1 \\
+CD Divinópolis & Barbacena & 70,00 & 1 \\
+CD Divinópolis & Lavras & 132,00 & 1 \\
+CD Divinópolis & Manhuaçu & 136,00 & 1 \\
+CD Divinópolis & Divinópolis & 124,00 & 1 \\
+CD Divinópolis & Araxá & 124,00 & 1 \\
+CD Divinópolis & Alfenas & 137,00 & 1 \\
+CD Divinópolis & Varginha & 149,00 & 1 \\
+CD Divinópolis & Uberlândia & 73,00 & 1 \\
+CD Divinópolis & Ipatinga & 52,00 & 1 \\
+CD Divinópolis & Juiz de Fora & 71,00 & 1 \\
+CD Divinópolis & Sete Lagoas & 102,00 & 1 \\
+CD Divinópolis & Poços de Caldas & 51,00 & 1 \\
+CD Divinópolis & Teófilo Otoni & 137,00 & 1 \\
+CD Divinópolis & Belo Horizonte & 79,00 & 1 \\
+CD Divinópolis & Montes Claros & 87,00 & 1 \\ \hline
+\textbf{Total} & & \textbf{2062,00} & \textbf{20} \\
+\hline
+\end{tabular}
+\caption{Distribuição dos CDs para clientes no Cenário 2}
+\label{tab:cenario2_cd_cli}
+\end{table}
+
+O mapa consolidado com as rotas do Cenário 2 é apresentado na Figura \ref{fig:mapa_cenario_2}, ilustrando a extrema centralização das rotas no CD de Divinópolis.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{imgs/mapa_cenario_2.png}
+\caption{Rotas geradas no Cenário 2 centralizadas em Divinópolis}
+\label{fig:mapa_cenario_2}
+\end{figure}
+
+% =========================================
+\section{Cenário Extra 2 - Flexibilização de Abastecimento}
+% =========================================
+
+Como forma de explorar a sensibilidade do modelo e analisar possíveis soluções para o elevado custo de estoque gerado pelo Cenário 2, propõe-se um cenário extra com uma mudança estrutural na modelagem. No modelo original, a restrição (3) força o recolhimento e processamento de toda a oferta disponível dos fornecedores:
+\[
+\sum_{k \in K} x_{ik} = s_i \quad \forall i \in I
+\]
+No entanto, na prática de cadeias de suprimentos, uma empresa não precisa comprar obrigatoriamente toda a oferta se ela excede as demandas do mercado consumidor. Assim, nesta proposta extra, a restrição (3) é relaxada para uma desigualdade (transformando-se em redundante frente à restrição 2), de modo que o recolhimento de matéria-prima passe a ser opcional:
+\[
+\sum_{k \in K} x_{ik} \le s_i \quad \forall i \in I
+\]
+
+A Tabela \ref{tab:cenario2_extra_custos} apresenta os resultados financeiros sob essa modelagem flexível. Nota-se que o custo total cai de R\$ 131.135,96 para R\$ 19.592,43, representando uma economia drástica e eliminando totalmente o estoque residual e sua respectiva penalidade.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\hline
+\textbf{Componente de Custo} & \textbf{Valor (R\$)} & \textbf{Representatividade (\%)} \\ \hline
+Custo Total             & 19592,43  & 100\%     \\
+Processamento (Torr)    & 12784,40  & $\sim$65,3\%  \\
+Instalação de CDs       &  6000,00  & $\sim$30,6\%  \\
+Transporte CD->Cli      &   488,43  & $\sim$2,5\%  \\
+Transporte Forn->CD     &   319,60  & $\sim$1,6\%  \\
+Penalidade de Estoque   &     0,00  & $\sim$0,0\%    \\
+\hline
+\end{tabular}
+\caption{Resultados Financeiros do Cenário Extra 2}
+\label{tab:cenario2_extra_custos}
+\end{table}
+
+\subsection{Efeito de Sourcing Estratégico}
+
+Ao desobrigar a compra do excesso de café, o total processado cai de 3093,00 kg para a demanda exata dos clientes de 2062,00 kg. Com isso, os CDs não precisam mais das torrefadoras de maior capacidade. O solver abre o CD em Divinópolis ($w_{Divinopolis} = 2,0$), mas agora aloca as torrefadoras T1 (a mais barata de todas) e T2. A capacidade combinada de T1 e T2 ($1458 + 1580 = 3038$ kg) é suficiente para processar os 2062,00 kg, barateando o processamento para R\$ 12.784,40.
+
+Mais do que isso, a maior oferta no mercado gera um forte efeito de otimização de sourcing (compras). Como o solver tem um "cardápio" maior de oferta disponível, ele pode escolher comprar preferencialmente dos fornecedores mais próximos de Divinópolis, deixando de adquirir café dos fornecedores geograficamente distantes (Ituiutaba, Uberaba e Governador Valadares).
+
+Esse aproveitamento se reflete diretamente no custo de transporte inbound (Fornecedor $\rightarrow$ CD): enquanto no cenário base (onde a oferta era menor e rígida) o custo de transporte de fornecedores para os CDs era de R\$ 654,57, no cenário extra com oferta flexível esse custo desaba para apenas R\$ 319,60 (queda de 51,2\%).
+
+A Tabela \ref{tab:cenario2_extra_forn_cd} apresenta como o fluxo se concentrou apenas nos fornecedores locais e vizinhos a Divinópolis. O total de viagens inbound cai de 10 viagens para apenas 7 viagens.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llcc}
+\hline
+\textbf{Origem (Fornecedor)} & \textbf{Destino (CD)} & \textbf{Quantidade (kg)} & \textbf{Viagens} \\ \hline
+São João del-Rei & Divinópolis & 376,50 & 1 \\
+Patos de Minas & Divinópolis & 198,00 & 1 \\
+Barbacena & Divinópolis & 259,50 & 1 \\
+Lavras & Divinópolis & 235,50 & 1 \\
+Manhuaçu & Divinópolis & 338,50 & 1 \\
+Divinópolis & Divinópolis & 432,00 & 1 \\
+Araxá & Divinópolis & 222,00 & 1 \\
+Governador Valadares & Divinópolis & 0,00 & 0 \\
+Ituiutaba & Divinópolis & 0,00 & 0 \\
+Uberaba & Divinópolis & 0,00 & 0 \\ \hline
+\textbf{Total} & & \textbf{2062,00} & \textbf{7} \\
+\hline
+\end{tabular}
+\caption{Distribuição dos fornecedores para os CDs no Cenário Extra 2}
+\label{tab:cenario2_extra_forn_cd}
+\end{table}
+
+A Figura \ref{fig:mapa_cenario_2_extra} mostra as rotas otimizadas resultantes do Cenário Extra 2, nas quais os fornecedores do Triângulo Mineiro e do Leste do estado (Governador Valadares) são excluídos do fluxo logístico, resultando em uma malha mais compacta e econômica.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{imgs/mapa_cenario_2_extra.png}
+\caption{Rotas geradas no Cenário Extra 2 com seleção otimizada de fornecedores}
+\label{fig:mapa_cenario_2_extra}
+\end{figure}
 
 % =========================================
 \section{Cenário 3}
 % =========================================
+
 
 O cenário 3 é focado no aumento da demanda dos clientes, em particular num aumento em 30\%. Neste cenário, entretanto, a demanda total supera a oferta total. Então, ao tentar executar o programa, um erro foi obtido, pois não havia solução viável para aquela instância. A instância em particular possuía os seguintes valores:
 
